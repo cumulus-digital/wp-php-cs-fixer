@@ -42,9 +42,11 @@ class Fixer
             ],
             'cast_spaces' => ['space' => 'single'],
             'class_attributes_separation' => [
-                'const' => 'one',
-                'method' => 'one',
-                'property' => 'one',
+                'elements' => [
+                    'const' => 'one',
+                    'method' => 'one',
+                    'property' => 'one',
+                ],
             ],
             'class_definition' => ['single_line' => true],
             'concat_space' => ['spacing' => 'one'],
