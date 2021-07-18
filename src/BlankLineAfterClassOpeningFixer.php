@@ -84,7 +84,7 @@ final class Sample {
             $ending = $this->whitespacesConfig->getLineEnding();
 
             $emptyLines = $ending.$ending;
-            $indent = 1 === Preg::match('/^.*\R( *)$/s', $content, $matches) ? $matches[1] : '';
+            $indent = 1 === Preg::match('/^.*\R([ \t]*)$/s', $content, $matches) ? $matches[1] : '';
 
             $tokens[$index] = new Token([T_WHITESPACE, $emptyLines.$indent]);
         }
